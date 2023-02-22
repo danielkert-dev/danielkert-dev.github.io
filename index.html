@@ -4,11 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Kert Portfolio</title>
+    <title>Dan Kert</title>
+
+    
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap" rel="stylesheet">
+    <!-- scripts -->
+    <script src="js/index.js"></script>
+
+    <script>
+    window.onload = function(){
+        let head = document.querySelector('#Head');
+        let headDesc = document.querySelector('#HeadDesc');
+
+        setTimeout(() => {
+
+        fadeIn(head, 1000); // fade in over 1 second
+        setTimeout(() => {fadeIn(headDesc, 900); }, "100")// fade in over 1 second
+    
+        }, "500")
+    }
+    </script>
+
 </head>
 <body>
+    <div id="particles-js"></div>
+    
+    <div class="mainHead">
+        <h1 id="Head">DAN KERT</h1>
+        <p id="HeadDesc">STORE</p>
+    </div>
 
-    <h1>My page</h1>
+    <div class="indexPageArrow">
+        <a href="#indexPage"> ⛛ </a>
+    </div>
+
+    <div class="indexPage" id="indexPage">
+        <br>
+        <div class="paragraph1">  
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat consequat placerat. Nunc hendrerit 
+            sapien eget porttitor pretium. Nunc vel nisi facilisis ipsum imperdiet fringilla vitae quis tellus. 
+            Etiam id arcu ut nisl sollicitudin ornare nec ac metus. Vivamus fringilla metus id euismod maximus. 
+            Praesent id ligula accumsan est finibus pulvinar vel at neque. Vestibulum luctus, nibh in tristique tempor, 
+            neque nunc vulputate diam, sed eleifend erat turpis lacinia leo. Donec et leo nec felis rhoncus scelerisque 
+            id eget ipsum. Fusce eleifend risus nec nunc auctor ullamcorper. Curabitur ullamcorper ultrices est quis egestas.
+            Nulla quis dui lectus. In faucibus tortor eu dignissim accumsan. Nulla a commodo arcu, et rhoncus eros. 
+            Proin aliquet eleifend semper.
+            <br><br>
+            Curabitur et erat id dolor congue pretium eget a justo. Duis consequat feugiat urna nec dignissim. 
+            Praesent fermentum feugiat lorem pulvinar tempus. Fusce sed arcu vehicula, commodo mi et, ullamcorper tortor. 
+            Quisque fringilla mi a erat ornare finibus. Morbi fringilla eleifend maximus. Integer gravida condimentum augue,
+            a tempor purus lobortis ut. Aenean vestibulum felis et nunc ornare bibendum. Vivamus non tristique nisl. 
+            Donec et nisl ut dolor tempus sollicitudin. Donec pretium odio ligula, et volutpat felis lobortis eu.
+            Donec hendrerit a leo vitae consequat. Aenean vitae auctor arcu, non laoreet risus. Integer nec vehicula justo. 
+            Sed eget neque nunc. Morbi non congue purus, quis imperdiet metus.
+            <br><br>
+            Duis blandit, nulla finibus sodales tempor, magna risus elementum massa, quis rhoncus mi sem elementum neque. 
+            Maecenas iaculis porttitor tortor non congue. Aliquam pharetra tellus sollicitudin mauris finibus tincidunt. 
+            Sed sit amet eros metus. Fusce varius venenatis gravida. Pellentesque quis malesuada nisi. 
+            Quisque id consequat lorem, sed tristique nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+            per inceptos himenaeos. Vestibulum sed semper nisl. Proin semper facilisis mauris. 
+            Proin porta ligula ut nisl consequat, at efficitur eros finibus.
+            <br><br>
+            Vivamus pellentesque venenatis fringilla. Vivamus feugiat metus nulla, 
+            sit amet posuere magna eleifend id. Pellentesque habitant morbi tristique senectus et netus et malesuada 
+            fames ac turpis egestas. Praesent rutrum dolor euismod, convallis lorem ac, semper dolor. Fusce tincidunt 
+            pulvinar lorem, nec ultricies elit dignissim vitae. Duis quis magna suscipit, condimentum risus sed, commodo turpis. 
+            Praesent gravida vehicula interdum. Nullam placerat ut nunc non aliquam. Aenean vehicula sem ut 
+            ligula lobortis porttitor. Nulla quis varius magna. Aliquam lacinia ornare massa, ut iaculis velit blandit ut.
+            <br>
+            at luctus augue congue. Duis non laoreet mauris.  </p>
+        </div>
+
+    </div>
+
     
 </body>
+<script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 </html>

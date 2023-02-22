@@ -1,0 +1,83 @@
+*  {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    outline: 1px solid limegreen ;
+    color: hsl(0, 0%, 76%);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+.mainHead {
+    text-align: center;
+    height: fit-content;
+    width: 100vw;
+    font-size: calc(20px + 2vw);
+    font-weight: bold;
+    padding-top: 30vh;
+    z-index: 9999;
+    text-shadow: #184780;
+}
+
+#Head {
+  opacity: 0;
+  background-clip: text;
+  background: linear-gradient(60deg, #F1DCD9,#FEC5B9 5%, #718EC4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+#HeadDesc {
+  opacity: 0;
+  background-clip: text;
+  background: linear-gradient(60deg, #787FA1, #718EC4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 2000px;
+  overflow: hidden;
+  background: linear-gradient(-20deg, #120b31, #0c0725 20%, #010713 90%);
+
+}
+
+.indexPageArrow {
+  width: 100%;
+  color: white; 
+  position: absolute; 
+  font-size: 50px;
+  text-align: center;
+}
+
+.indexPage{
+  position: absolute;
+  background-color: #010713;
+  height: 2000px;
+  width: 100%;
+  margin-top: 80vh;
+
+}
+
+.paragraph1 {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  text-align: center;
+}
