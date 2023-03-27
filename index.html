@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Kert</title>
-</head>
-<body>
-    <h1>Daniel Kert portfolio</h1>
+<html>
+   <head>
+      <title>Leaflet sample</title>
+      <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+      <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+   </head>
 
-    <p>
-        Work in progress...
-    </p>
-</body>
+   <body>
+      <div id = "map" style = "width: 900px; height: 580px"></div>
+      <script>
+        
+
+         // Creating map options
+         var mapOptions = {
+            center: [60.100804, 19.934242 ],
+            zoom: 15
+         }
+         // Creating a map object
+         var map = new L.map('map', mapOptions);
+         
+         // Creating a Layer object
+         var layer = new L.TileLayer('https://{s}.tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png?apikey={apikey}', {
+	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	apikey: 'c81315851a214672aecd052e9fecf4ef',
+	maxZoom: 22
+});
+         // DCt2YBS5n0bmd47mfRt1kC7UG78ltzdU2UeVpQTxORrk3CfHquS94dbXqplIxOmg
+         // Adding layer to the map
+         map.addLayer(layer);
+
+
+// Icon options
+var iconOptions = {
+   iconUrl: './pin.svg',
+   iconSize: [50, 50]
+}
+
+// Creating a custom icon
+var customIcon = L.icon(iconOptions);
+
+
+
+         // Options for the marker
+var markerOptions = {
+   title: "MyLocation",
+   clickable: true,
+   draggable: true,
+   icon: customIcon,
+}
+
+         // Creating a marker
+var marker = new L.Marker([ 60.100804 , 19.934242 ], markerOptions);
+marker.addTo(map);
+marker.bindPopup('This is hell').openPopup();
+
+      </script>
+   </body>
+   
 </html>
