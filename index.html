@@ -1,60 +1,101 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Leaflet sample</title>
-      <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-      <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-   </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Kertsmik</title>
 
-   <body>
-      <div id = "map" style = "width: 900px; height: 580px"></div>
-      <script>
-        
-
-         // Creating map options
-         var mapOptions = {
-            center: [60.100804, 19.934242 ],
-            zoom: 15
-         }
-         // Creating a map object
-         var map = new L.map('map', mapOptions);
-         
-         // Creating a Layer object
-         var layer = new L.TileLayer('https://{s}.tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png?apikey={apikey}', {
-	attribution: '&copy; <a href="http://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	apikey: 'c81315851a214672aecd052e9fecf4ef',
-	maxZoom: 22
-});
-         // DCt2YBS5n0bmd47mfRt1kC7UG78ltzdU2UeVpQTxORrk3CfHquS94dbXqplIxOmg
-         // Adding layer to the map
-         map.addLayer(layer);
+    <!--! LOCAL JS -->
+    <script src="app/js/main.js"></script>
+    <script src="app/js/language.js"></script>
 
 
-// Icon options
-var iconOptions = {
-   iconUrl: './pin.svg',
-   iconSize: [50, 50]
-}
+    <!--! LOCAL CSS -->
+    <link rel="stylesheet" href="app/css/main.css">
 
-// Creating a custom icon
-var customIcon = L.icon(iconOptions);
+    <!--! LIB -->
+
+</head>
+<body>
+
+    <!--* FIXES-->
+
+    <style>
+    @media screen and (max-width: 700px) {
+
+    .logo {
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+    }
+
+    .title {
+    font-size: 3rem;
+    }
+    }
+
+    @media screen and (min-width: 700px) {
+
+    .logo {
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
+    }
+
+    .title {
+    font-size: 5rem;
+    }
+    }
+    </style>
+
+    <!--* HEADER-->
+<header>
+
+    <!--* LOGO-->
+    <div class="logo">DANIEL KERTSMIK</div>
+
+    <!--* SELECT LANGUAGE-->
+    <select class="language-selector" onchange="changeLanguage()">
+        <option value="swedish" >SVENSKA</option>
+        <option value="english" selected>ENGLISH</option>
+      </select>
 
 
+</header>
 
-         // Options for the marker
-var markerOptions = {
-   title: "MyLocation",
-   clickable: true,
-   draggable: true,
-   icon: customIcon,
-}
+<!--* FIRST SLIDE-->
+<main>
 
-         // Creating a marker
-var marker = new L.Marker([ 60.100804 , 19.934242 ], markerOptions);
-marker.addTo(map);
-marker.bindPopup('This is hell').openPopup();
+    <img id="background-image" src="media/img/background-a.png"/>
 
-      </script>
-   </body>
-   
+
+    <table id="hero-text">
+    <tr>
+    <td>
+    <div class="title">Hello welcome</div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <div class="sub-title-a">Åland</div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <div class="sub-title-b">Mariehamn</div>
+    </td>
+    </tr>
+    </table>
+
+    <a > </a>
+
+</main>
+
+<!--* SECTION-A-->
+<div id="section-a">
+
+<h1>This is my work</h1>
+
+</div>
+
+</body>
 </html>
