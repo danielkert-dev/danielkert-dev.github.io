@@ -1,1 +1,0 @@
-import{o as e,c as a,a as s}from"./index-499abfb4.js";const t={class:"container-fluid"},o=s("h1",null,"This is an about page",-1),c=[o],l={__name:"FavView",setup(n){return(_,i)=>(e(),a("main",t,c))}};export{l as default};
